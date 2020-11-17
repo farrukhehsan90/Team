@@ -39,7 +39,7 @@ function MainComponent(props) {
             <h3>{getTeamByid.length === 0 ? '' : getTeamByid[0].text}</h3>
             <hr />
             <div className="row" style={{ overflowY: 'auto', height: '450px' }}>
-                <div className="col-md-3 mt-2">
+                <div className="col-md-4 mt-2">
                     <div style={{ backgroundColor: '#CCD8DC', padding: '1rem', width: '15rem' }}>
                         <div className="form-group">
                             <label htmlFor="exampleFormControlInput1">Name</label>
@@ -54,12 +54,12 @@ function MainComponent(props) {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-1">
-                </div>
+                {/* <div className="col-md-1">
+                </div> */}
                 {
                     getUserId.map((user, i) => {
                         return (
-                            <div key={i} className="col-md-4 mt-3 flex" style={{marginRight: '5rem'}}>
+                            <div key={i} className="col-md-4 mt-2" style={{marginRight: '.1rem'}}>
                                 <div style={{ backgroundColor: '#CCD8DC', padding: '1rem', width: '15rem'}}>
                                     <div className="form-group">
                                         <label htmlFor="exampleFormControlInput1">Name</label>
