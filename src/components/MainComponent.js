@@ -59,8 +59,8 @@ function MainComponent(props) {
                 {
                     getUserId.map((user, i) => {
                         return (
-                            <div key={i} className="col-md-8 mt-2">
-                                <div style={{ backgroundColor: '#CCD8DC', padding: '1rem', width: '15rem' }}>
+                            <div key={i} className="col-md-4 mt-3 flex" style={{marginRight: '5rem'}}>
+                                <div style={{ backgroundColor: '#CCD8DC', padding: '1rem', width: '15rem'}}>
                                     <div className="form-group">
                                         <label htmlFor="exampleFormControlInput1">Name</label>
                                         <input type="email" className="form-control" id="exampleFormControlInput1" value={user.userName} placeholder="Enter Here" />
